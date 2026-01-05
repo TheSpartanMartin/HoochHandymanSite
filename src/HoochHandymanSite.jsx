@@ -369,8 +369,8 @@ export default function HoochHandymanSite() {
               <label className="grid gap-2 text-sm">
                 <span className="font-medium">Name</span>
                 <input
-                  type="text"
                   name="name"
+                  type="text"
                   required
                   placeholder="Your Name"
                   className="rounded-xl border p-3"
@@ -380,8 +380,8 @@ export default function HoochHandymanSite() {
               <label className="grid gap-2 text-sm">
                 <span className="font-medium">Email</span>
                 <input
-                  type="email"
                   name="email"
+                  type="email"
                   required
                   placeholder="you@example.com"
                   className="rounded-xl border p-3"
@@ -391,8 +391,8 @@ export default function HoochHandymanSite() {
               <label className="grid gap-2 text-sm">
                 <span className="font-medium">Phone</span>
                 <input
-                  type="tel"
                   name="phone"
+                  type="tel"
                   placeholder="(770) 555-1234"
                   className="rounded-xl border p-3"
                   style={{ borderColor: "#e5e7eb" }}
@@ -410,6 +410,7 @@ export default function HoochHandymanSite() {
               </label>
               <div className="flex flex-wrap gap-3">
                 <button
+                  type="submit"
                   className="rounded-2xl px-5 py-3 text-sm font-semibold text-white"
                   style={{ background: COLORS.primary }}
                 >
