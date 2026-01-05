@@ -361,7 +361,8 @@ export default function HoochHandymanSite() {
             </ul>
           </div>
           <form
-            onSubmit={(e) => e.preventDefault()}
+            action="https://formspree.io/f/mldzzlwv"
+            method="POST"
             className="rounded-2xl p-6 shadow-xl bg-white"
           >
             <div className="grid gap-4">
@@ -369,6 +370,8 @@ export default function HoochHandymanSite() {
                 <span className="font-medium">Name</span>
                 <input
                   type="text"
+                  name="name"
+                  required
                   placeholder="Your Name"
                   className="rounded-xl border p-3"
                   style={{ borderColor: "#e5e7eb" }}
@@ -378,6 +381,8 @@ export default function HoochHandymanSite() {
                 <span className="font-medium">Email</span>
                 <input
                   type="email"
+                  name="email"
+                  required
                   placeholder="you@example.com"
                   className="rounded-xl border p-3"
                   style={{ borderColor: "#e5e7eb" }}
@@ -387,6 +392,7 @@ export default function HoochHandymanSite() {
                 <span className="font-medium">Phone</span>
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="(770) 555-1234"
                   className="rounded-xl border p-3"
                   style={{ borderColor: "#e5e7eb" }}
@@ -395,6 +401,8 @@ export default function HoochHandymanSite() {
               <label className="grid gap-2 text-sm">
                 <span className="font-medium">Project Details</span>
                 <textarea
+                  name="message"
+                  required
                   placeholder="Tell us what you need help with…"
                   className="rounded-xl border p-3 min-h-[120px]"
                   style={{ borderColor: "#e5e7eb" }}
