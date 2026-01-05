@@ -361,6 +361,7 @@ export default function HoochHandymanSite() {
             </ul>
           </div>
           <form
+            id="estimate-form"
             action="https://formspree.io/f/mldzzlwv"
             method="POST"
             className="rounded-2xl p-6 shadow-xl bg-white"
@@ -411,6 +412,7 @@ export default function HoochHandymanSite() {
               <div className="flex flex-wrap gap-3">
                 <button
                   type="submit"
+                  form="estimate-form"
                   className="rounded-2xl px-5 py-3 text-sm font-semibold text-white"
                   style={{ background: COLORS.primary }}
                 >
