@@ -420,20 +420,7 @@ export default function HoochHandymanSite() {
                   type="submit"
                   form="estimate-form"
                   className="rounded-2xl px-5 py-3 text-sm font-semibold text-white"
-                  style={{ background: COLORS.primary }}
-                  onClick={() => {
-                    console.log("Request Estimate clicked");
-                    const form = document.getElementById("estimate-form");
-                    console.log("Form found?", !!form);
-
-                    if (form && "requestSubmit" in form) {
-                      form.requestSubmit();
-                    } else if (form) {
-                      form.submit()
-                    } else {    
-                      alert('Form not found. Make sure your <form> has id="estimate-form".');
-                    }
-                  }}  
+                  style={{ background: COLORS.primary }}                      
                 >
                   Request Estimate
                 </button>
@@ -669,9 +656,4 @@ function FacebookIcon({ className = "h-4 w-4" }) {
     </svg>
   );
 }
-function MapPinIcon() {
-  return null;
-}
-function ShieldCheckIcon() {
-  return null;
-}
+
